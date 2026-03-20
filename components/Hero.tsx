@@ -48,7 +48,7 @@ export function Hero() {
 
           <div className="glow mt-16 w-full max-w-3xl overflow-hidden rounded-2xl border border-white/10">
             <Image
-              src="/hero-banner.jpeg"
+              src="/hero-banner.png"
               alt="Aniscale - AI Video Upscaling"
               width={1500}
               height={750}
