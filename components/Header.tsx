@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useLocale } from "@/lib/locale-context";
@@ -22,9 +23,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-white/5 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-violet-500 to-blue-500">
-            <span className="text-sm font-bold text-white">A</span>
-          </div>
+          <Image src="/logo.png" alt="Aniscale" width={32} height={32} className="rounded-lg" />
           <span className="text-lg font-bold tracking-tight">Aniscale</span>
         </Link>
 

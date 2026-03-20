@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLocale } from "@/lib/locale-context";
 
 export default function DownloadPage() {
@@ -17,12 +18,7 @@ export default function DownloadPage() {
 
         <div className="mx-auto max-w-xl">
           <div className="glow gradient-border rounded-3xl bg-zinc-900/80 p-8 text-center md:p-12">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-blue-500">
-              <svg viewBox="0 0 24 24" fill="none" className="h-8 w-8 text-white">
-                <path d="M12 2a10 10 0 110 20 10 10 0 010-20z" stroke="currentColor" strokeWidth="1.5" />
-                <path d="M8 12l4 4 4-4M12 8v8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
+            <Image src="/logo.png" alt="Aniscale" width={80} height={80} className="mx-auto mb-6 rounded-2xl" />
             <h2 className="mb-2 text-2xl font-bold">{t.download.appTitle}</h2>
             <p className="mb-1 text-sm text-zinc-400">{t.download.appBinary}</p>
             <p className="mb-8 text-xs text-zinc-600">{t.download.appSize}</p>

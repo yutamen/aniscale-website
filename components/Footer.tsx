@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "@/lib/locale-context";
 
@@ -12,9 +13,7 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-br from-violet-500 to-blue-500">
-                <span className="text-xs font-bold text-white">A</span>
-              </div>
+              <Image src="/logo.png" alt="Aniscale" width={28} height={28} className="rounded-md" />
               <span className="font-bold tracking-tight">Aniscale</span>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-zinc-500">
