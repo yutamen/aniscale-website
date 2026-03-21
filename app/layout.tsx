@@ -23,6 +23,21 @@ export const metadata: Metadata = {
     description:
       "Anime-focused AI video upscaling. Upscale, denoise, and interpolate frames locally on your Mac.",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aniscale - AI Video Upscaling for Anime",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aniscale - AI Video Upscaling for Anime",
+    description:
+      "Anime-focused AI video upscaling. Upscale, denoise, and interpolate frames locally on your Mac.",
+    images: ["/og-image.png"],
   },
 };
 
