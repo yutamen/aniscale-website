@@ -18,7 +18,7 @@ export default function DownloadPage() {
 
         <div className="mx-auto max-w-xl">
           <div className="glow gradient-border rounded-3xl bg-zinc-900/80 p-8 text-center md:p-12">
-            <Image src="/logo.png" alt="Aniscale" width={80} height={80} className="mx-auto mb-6 rounded-2xl" />
+            <Image src="/app-icon.png" alt="Aniscale" width={120} height={120} className="mx-auto mb-6" />
             <h2 className="mb-2 text-2xl font-bold">{t.download.appTitle}</h2>
             <p className="mb-1 text-sm text-zinc-400">{t.download.appBinary}</p>
             <p className="mb-8 text-xs text-zinc-600">{t.download.appSize}</p>
