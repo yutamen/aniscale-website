@@ -26,6 +26,7 @@ export default function PricingPage() {
       highlight: false,
       badge: null,
       sub: null,
+      href: "/download",
     },
     {
       nameKey: "standard" as const,
@@ -35,6 +36,7 @@ export default function PricingPage() {
       highlight: true,
       badge: null,
       sub: null,
+      href: "https://buy.stripe.com/test_3cI14hgdtewm4Q6fNWcs800",
     },
     {
       nameKey: "annual" as const,
@@ -44,6 +46,7 @@ export default function PricingPage() {
       highlight: false,
       badge: t.pricing.bestValue,
       sub: t.pricing.annualTotal,
+      href: "https://buy.stripe.com/test_14A28lf9p0Fw4Q6cBKcs801",
     },
   ] as const;
 
@@ -102,15 +105,18 @@ export default function PricingPage() {
                 ))}
               </ul>
 
-              <button
-                className={`w-full rounded-full py-3 text-sm font-medium transition-opacity hover:opacity-90 ${
+              <a
+                href={plan.href}
+                target={plan.nameKey === "free" ? "_self" : "_blank"}
+                rel="noopener noreferrer"
+                className={`block w-full rounded-full py-3 text-center text-sm font-medium transition-opacity hover:opacity-90 ${
                   plan.highlight
                     ? "bg-gradient-to-r from-violet-600 to-blue-600 text-white"
                     : "border border-white/10 bg-white/5 text-zinc-300 hover:bg-white/10"
                 }`}
               >
                 {t.pricing.subscribeBtn}
-              </button>
+              </a>
             </div>
           ))}
         </div>
